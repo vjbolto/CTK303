@@ -1,0 +1,127 @@
+html, body 
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #0e7707;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid 
+{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+#wrapper 
+{
+  margin: 24px auto;
+  max-width: 1200px;
+  width: 95%;
+  background-color: #f3ad4b;
+  box-sizing: border-box;
+}
+
+header 
+{
+  padding: 40px 0;
+}
+
+h1
+{
+    font-size: 100px;
+}
+
+.header 
+{
+    animation: fadeInDown 0.8s ease-out forwards;
+  grid-column: 2 / span 10;
+  margin: 0 0 20px 0;
+  color: #f1991d; 
+  text-shadow: 
+    0 0 10px #000000, 
+    0 0 20px #3bb113, 
+    0 0 30px #ffffff;
+}
+
+.thumbnail 
+{
+    animation: fadeInDown 0.8s ease-out forwards;
+  grid-column: 2 / span 10;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.outkast-logo 
+{
+    animation: fadeInDown 0.8s ease-out forwards;
+  grid-column: 4 / span 6;
+  width: 100%;
+  height: auto;
+  justify-self: end;
+}
+
+/* Main Section - Full Width */
+main 
+{
+  padding: 0;
+}
+
+.about-section 
+{
+    animation: fadeInDown 0.8s ease-out forwards;
+  grid-column: 1 / span 12;
+  background-color: #ffffff;
+  padding: 60px 10%; 
+}
+
+.about-section h2 
+{
+  margin-top: 0;
+  font-size: 55px;
+}
+
+.about-section p 
+{
+    font-size: 35px;
+}
+
+
+footer 
+{
+  padding: 60px 0;
+  align-items: center;
+}
+
+.billboard-logo
+{
+  grid-column: 8 / span 4;
+  width: 100%;
+  height: auto;
+}
+
+.audio-player 
+{
+  grid-column: 2 / span 4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+audio 
+{
+  width: 100%;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
