@@ -16,12 +16,12 @@ let bgW;
 let bgL;
 let song1, song2, song3, song4;
 
-// function preload(){
-//     song1 = loadSound("assets/song1.mp4");
+function preload(){
+//   song1 = loadSound("assets/song1.mp4");
 //   song2 = loadSound("assets/song2.mp4");
 //   song3 = loadSound("assets/song3.m4a");
 //   song4 = loadSound("assets/song4.mp4");
-// }
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -48,18 +48,18 @@ function setup() {
   
 
   
-  if(state == 2){
-     song3.play();
-     }
-  if(state == 3){
-     song1.play();
-     }
-  if(state == 1){
-     song2.play();
-     }
-  if(state == 0){
-     song4.play();
-     }
+//   if(state == 2){
+//      song3.play();
+//      }
+//   if(state == 3){
+//      song1.play();
+//      }
+//   if(state == 1){
+//      song2.play();
+//      }
+//   if(state == 0){
+//      song4.play();
+//      }
   
   // car0 = new Car();
 
@@ -71,21 +71,21 @@ switch (state) {
   case 0:
 	image(bgS, width/2, height/2, width, height);
     fill("black");
-    if(!song4.isPlaying()){
-      song1.stop();
-      song2.stop();
-      song3.stop();
-     song4.play();
-     }
+    // if(!song4.isPlaying()){
+    //   song1.stop();
+    //   song2.stop();
+    //   song3.stop();
+    //  song4.play();
+    //  }
     text("Welcome",100,100);
 	break;
     
   case 1:
 	game();
-    if(!song2.isPlaying()){
-      song4.stop();
-     song2.play();
-     }
+    // if(!song2.isPlaying()){
+    //   song4.stop();
+    //  song2.play();
+    //  }
     //timer ++;
     // if (timer > 10*60){
     //   state = 2;
@@ -95,20 +95,20 @@ switch (state) {
   case 2:
 	image(bgL, width/2, height/2, width, height);
     fill("white");
-    if(!song3.isPlaying()){
-      song2.stop();
-     song3.play();
-     }
+    // if(!song3.isPlaying()){
+    //   song2.stop();
+    //  song3.play();
+    //  }
     text("You are Loser",100,100);
 	break;
     
   case 3:
     image(bgW, width/2, height/2, width, height);
     text("You are Win",100,100);
-    if(!song1.isPlaying()){
-      song2.stop();
-     song1.play();
-     }
+    // if(!song1.isPlaying()){
+    //   song2.stop();
+    //  song1.play();
+    //  }
     break;
 }
   // car0.display();
