@@ -77,7 +77,7 @@ switch (state) {
     //   song3.stop();
     //  song4.play();
     //  }
-    text("Welcome",100,100);
+    text("Welcome, Put Out The Fire by Collecting Water",100,100);
 	break;
     
   case 1:
@@ -294,4 +294,5 @@ pop();
     // text("OOP", this.pos.x, this.pos.y);
   }
 }
+
 
