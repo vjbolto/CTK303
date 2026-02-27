@@ -39,7 +39,7 @@ h1
     animation: fadeInDown 0.8s ease-out forwards;
   grid-column: 2 / span 10;
   margin: 0 0 20px 0;
-  color: #f1991d; 
+  color: #3fa91c; 
   text-shadow: 
     0 0 10px #000000, 
     0 0 20px #3bb113, 
@@ -124,4 +124,5 @@ audio
     opacity: 1;
     transform: translateY(0);
   }
+
 }
