@@ -42,7 +42,7 @@ h1
   color: #ffffff; 
   text-shadow: 
     0 0 10px #000000, 
-    0 0 20px #3bb113, 
+    0 0 20px #ffffff, 
     0 0 30px #ffffff;
 }
 
@@ -126,4 +126,5 @@ audio
   }
 
 }
+
 
